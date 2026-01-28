@@ -15,13 +15,16 @@ ENV/
 
 # Output files
 output/
-*.png
-*.jpg
-*.jpeg
-*_temp.png
 
 # Input images
 input_images/
+
+# Root-level example images are tracked (don't ignore)
+# Only ignore images inside directories
+**/*.png
+**/*.jpg
+**/*.jpeg
+!image.png
 
 # Documentation
 PROJECT_BRIEF.md
