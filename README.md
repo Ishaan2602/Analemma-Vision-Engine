@@ -6,6 +6,8 @@ I built a dynamic python-based toolkit to calculate and visualize the Sun's anal
 
 This is both a **mathematical** and **computer vision** problem. The analemma's figure-8 shape comes from Earth's axial tilt and elliptical orbit. This project calculates the theoretical path (orbital mechanics, coordinate transforms) and overlays it onto real sky photos using automatic sun detection (scipy blob detection, brightness analysis).
 
+![Example Output](hongkong_composite_final.png)
+
 ## Installation
 
 ```bash
