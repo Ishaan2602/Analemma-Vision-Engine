@@ -39,6 +39,22 @@ plotter.plot_analemma(sky_data)
 plotter.show()
 ```
 
+## Physics & Computational Techniques
+
+**Mathematical Formulas:**
+- **Solar Declination**: Approximated using $\delta \approx 23.45° \times \sin\left[\frac{360}{365}(N + 284)\right]$ where $N$ is day of year
+- **Equation of Time**: Calculated from orbital eccentricity and axial tilt components
+- **Altitude Calculation**: Spherical law of cosines: $\sin(a) = \sin(\phi)\sin(\delta) + \cos(\phi)\cos(\delta)\cos(H)$
+  - $a$ = altitude, $\phi$ = latitude, $\delta$ = declination, $H$ = hour angle
+- **Azimuth Transform**: Computed from hour angle and declination relative to observer position
+
+**Computer Vision Techniques:**
+- **Sun Detection**: Scipy blob detection with 99.9th percentile brightness threshold
+- **Brightness Weighting**: Center-of-mass calculation weighted by pixel intensity
+- **Horizon Filtering**: Removes analemma points below horizon (altitude < 0°)
+- **Camera Calibration**: Inverse pinhole projection using focal length and sensor dimensions
+- **EXIF Handling**: Auto-rotation using EXIF orientation tags
+
 ## Files
 
 - `analemma/` - Core calculation/visualization modules
