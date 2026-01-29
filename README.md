@@ -41,7 +41,7 @@ plotter.show()
 
 ## Physics & Computational Techniques
 
-**Mathematical Formulas:**
+**Key Physics:**
 - **Solar Declination**: Approximated using $\delta \approx 23.45° \times \sin\left[\frac{360}{365}(N + 284)\right]$ where $N$ is day of year
 - **Equation of Time**: Calculated from orbital eccentricity and axial tilt components
 - **Altitude Calculation**: Spherical law of cosines: $\sin(a) = \sin(\phi)\sin(\delta) + \cos(\phi)\cos(\delta)\cos(H)$
